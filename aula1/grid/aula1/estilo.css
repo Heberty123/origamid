@@ -1,0 +1,32 @@
+.item {
+  background-color: antiquewhite;
+  padding: 30px;
+}
+
+h1,
+h2 {
+  margin: 0px;
+}
+
+.title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+.item a {
+  background-color: rgb(255, 196, 255);
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
