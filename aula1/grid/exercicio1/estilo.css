@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 50px;
+}
+
+.title {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.menu {
+  background-color: antiquewhite;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.imagem{
+  width: 300px;
+  grid-column: 2 / 2;
+
+}
