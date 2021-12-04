@@ -1,0 +1,25 @@
+body {
+  margin: 40px;
+}
+
+.imagem {
+  max-width: 100%;
+  grid-row: 1 / -1;
+}
+
+.botao {
+  background-color: rgb(184, 91, 91);
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.imagem {
+  grid-template-columns: 1 / 3;
+}
