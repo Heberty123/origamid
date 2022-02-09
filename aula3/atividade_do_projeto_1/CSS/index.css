@@ -1,0 +1,354 @@
+body{
+    height: 100vw;
+}
+
+.header-index{
+    width: 100%;
+    height: 96.3px;
+    background-color: black;
+}
+
+.header-div{
+    max-width: 1200px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.menus {
+    display: flex;
+    align-items: center;
+    gap: 30px
+}
+
+.menu {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+.menu::before {
+    content: "";
+    width: 0%;
+    height: 2px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 25px;
+    transition: 0.3s;
+}
+
+
+.menu:hover::before {
+    width: 100%;
+}
+
+
+.introducao-bac{
+    width: 100%;
+    background-color: beige;
+    box-shadow: inset 0 -120px white;
+}
+
+
+.introducao-container{
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.introducao-contexto{
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 70%;
+    padding-bottom: 200px;
+    box-sizing: border-box;
+    justify-items: right;
+}
+
+.titulo-home{
+    font-size: 2.6rem;
+}
+
+.dot_yellow{
+    color: yellow;
+    border-radius: 5px;
+}
+
+.introducao{
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+.button_introducao{
+    display: flex;
+    text-decoration: none;
+    font-size: 1.6rem;
+    width: 30%;
+    color: black;
+    height: 40px;
+    background-color: yellow;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-home{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.the-bikes{
+    width: 100%;
+    height: auto;
+    max-width: 1400px;
+    box-sizing: border-box;
+    padding: 40px 20px;
+    margin: 0 auto;
+}
+
+.title-escolha{
+    font-size: 3.8rem;
+    margin-bottom: 40px;
+    padding-left: 130px;
+}
+
+.lista-bike{
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.li-bike{
+    list-style: none;
+}
+
+.li-bike:hover > .subtitle-li::before{
+    width: 5%;
+    transition: 0.3s;
+}
+
+.lista-bike img{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+
+}
+
+.subtitle-li{
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.subtitle-li::before{
+    content: "";
+    display: inline-block;
+    width: 2.5%;
+    height: 7px;
+    background-color: rgb(177, 177, 22);
+    transition: 0.3s;
+}
+
+.preco-li{
+    font-size: 1.2rem;
+    padding-left: 20px;
+    margin-top: 7px;
+}
+
+.background-tecnologia{
+    background-color: rgb(0, 0, 0);
+    box-shadow: inset 0 120px white, inset 0 -120px white;
+}
+
+.intro-tecnologia{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    margin: 0px auto;
+
+}
+
+.contexto-tecnologia{
+
+}
+
+.title-tecnologia{
+    font-size: 1.8rem;
+    color: rgb(187, 187, 168);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.frase-tecnologia{
+    font-size: 2.8rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.descricao-tecnologia{
+    font-size: 1.8rem;
+    color: rgb(228, 234, 240);
+    margin-bottom: 15px;
+}
+
+
+.modelo-escolha{
+    color: yellow;
+    font-size: 2.3rem;
+    display: inline-block;
+    margin-bottom: 90px;
+    position: relative;
+}
+
+.modelo-escolha::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: yellow;
+    top: 43px;
+}
+
+.tecnologias-grid{
+    display: flex;
+    gap: 30px;
+    color: aliceblue;
+}
+
+.tecnologia{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tec-motor{
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.tec-rastreador{
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.tec-motor::before{
+    content: "";
+    background-image: url("../IMG/icones/eletrica.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -40px;
+    left: -10px;
+}
+
+.tec-rastreador::before{
+    content: "";
+    background-image: url("../IMG/icones/rastreador.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -40px;
+    left: -10px;
+}
+
+.especifico-desc{
+    font-size: 1.1rem;
+}
+
+.imagem-tecnologia img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.section-parceiros{
+    width: 100%;
+    max-width: 1200px;
+    margin: 70px auto 80px auto;
+}
+
+.title-parceiros{
+    font-size: 4.3rem;
+    padding-left: 60px;
+    margin-bottom: 50px;
+}
+
+.parceiros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.lista-parceiros{
+    list-style: none;
+    padding: 30px;
+}
+
+.lista-parceiros:nth-child(n+5){
+    border-top: 1px solid rgb(212, 200, 200);
+    border-left: 1px solid rgb(212, 200, 200);
+}
+
+.lista-parceiros:nth-child(n+1){
+    border-left: 1px solid rgb(212, 200, 200);
+}
+
+.lista-parceiros:nth-child(1){
+    border-left: none;
+}
+
+.lista-parceiros:nth-child(5){
+    border-left: none;
+}
+
+.depoimentos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-depoimento{
+    width: 100%;
+    height: auto;
+    max-height: 520px;
+    object-fit: cover;
+}
+
+.box-motivacional{
+    background-color: yellow;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.frase-motivacional{
+    font-size: 2.3rem;
+}
+
+
