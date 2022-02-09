@@ -1,8 +1,37 @@
+:root{
+  --cor-primaria: crimson;
+  --cor-segundaria: #e21;
+  --title1: black;
+  --menu: antiquewhite;
+  --fundo: #f7f7f7;
+  --fundo2: rgb(228, 221, 212);
+  --footer: rgb(84, 161, 161);
+  --text-des: rgb(167, 157, 155);
+  --font-p: black;
+  --onda-claro-svg: url(imagem/onda-claro.svg);
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root{
+    --cor-primaria: crimson;
+    --cor-segundaria: #e21;
+    --title1: rgb(255, 255, 255);
+    --menu: rgb(77, 74, 70);
+    --fundo: #1f1b1b;
+    --fundo2: rgb(68, 66, 63);
+    --footer: rgb(117, 119, 119);
+    --text-des: rgb(255, 242, 240);
+    --font-p: rgb(255, 255, 255);
+    --onda-claro-svg: url(imagem/onda-escuro.svg);
+  }
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background: #f7f7f7;
+  background: var(--fundo);
 }
 
 .mini_body{
@@ -13,6 +42,7 @@ body {
   text-align: center;
   font-size: 3vw;
   margin-bottom: 45px;
+  color: var(--title1);
 }
 
 .flex {
@@ -24,7 +54,8 @@ body {
 }
 
 .menu {
-  background-color: antiquewhite;
+  background-color: var(--menu);
+  color: var(--font-p);
   padding: 5px 10px;
   border-radius: 4px;
   text-transform: uppercase;
@@ -39,7 +70,7 @@ body {
 }
 
 .caixa1{
-  background-color: rgb(228, 221, 212);
+  background-color: var(--fundo2);
   display: grid;
   padding: 40px;
   align-content: center;
@@ -47,6 +78,7 @@ body {
   text-align: right;
   position: relative;
   gap: 20px;
+  color: var(--title1);
 }
 
 
@@ -62,7 +94,7 @@ body {
 .detalhe{
   width: 60px;
   height: 4px;
-  background: #e21;
+  background: var(--cor-segundaria);
   /*display: inline-block;*/
   position: absolute;
   top: 30px;
@@ -71,12 +103,18 @@ body {
 }
 
 .button{
-  background-color: crimson;
-  color: white;
+  background-color: var(--cor-primaria);
+  color: var(--font-p);
   align-self: start;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
+  transition: .5s;
+}
+
+.button:hover{
+  background-color: rgb(146, 34, 57);
+  transition: .5s;
 }
 
 .div_img{
@@ -103,14 +141,15 @@ h2{
   align-self: center;
   margin-right: 20px;
   font-size: 4vw;
-  color: rgb(167, 157, 155);
+  color: var(--text-des);
   text-transform: uppercase;
+  background-image: var(--onda-claro-svg);
 }
 
 
 .caixa2{
   padding: 20px;
-  background-color: rgb(228, 221, 212);
+  background-color: var(--fundo2);
 }
 
 
@@ -129,19 +168,21 @@ h2{
 
 .caixa_svg h2{
   align-self: center;
-
+  color: var(--font-p);
 }
 
 .caixa_svg p{
   grid-column: 2;
+  color: var(--font-p);
 }
 
 footer{
   width: 100%;
   padding: 40px;
-  background-color: rgb(84, 161, 161);
+  background-color: var(--footer);
   text-align: center;
   margin-top: 90px;
   box-sizing: border-box;
+  color: var(--font-p);
 }
 
