@@ -31,11 +31,18 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+<<<<<<< HEAD
   background: var(--fundo);
+=======
+  background: #f7f7f7;
+  box-sizing: border-box;
+>>>>>>> 86c86e589a55819fa260c7768fa1036e718ddaf9
 }
 
-.mini_body{
+.mini_body {
   padding: 80px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .title {
@@ -50,7 +57,7 @@ body {
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
-  justify-content: center;
+  
 }
 
 .menu {
@@ -59,18 +66,29 @@ body {
   padding: 5px 10px;
   border-radius: 4px;
   text-transform: uppercase;
+  border: 3px transparent solid;
+  
+}
+
+.menu:hover{
+  border: 3px rgb(53, 164, 184) solid;
 }
 
 .grid {
   width: 87%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(300px , 100%));
   margin-top: 50px;
   margin: 50px auto 0px;
 }
 
+<<<<<<< HEAD
 .caixa1{
   background-color: var(--fundo2);
+=======
+.caixa1 {
+  background-color: rgb(228, 221, 212);
+>>>>>>> 86c86e589a55819fa260c7768fa1036e718ddaf9
   display: grid;
   padding: 40px;
   align-content: center;
@@ -81,16 +99,29 @@ body {
   color: var(--title1);
 }
 
-
-.title_caix1{
+.title_caix1 {
   font-size: 2vw;
   margin: 0px;
+  position: relative;
 }
 
-.p_caixa1{
+.title_caix1::after {
+  content: "";
+  background: red;
+  width: 40px;
+  height: 5px;
+  display: inline-block;
+  position: absolute;
+  right: -60px;
+  top: -40px;
+  box-shadow: 2px 3px 5px black;
+}
+
+.p_caixa1 {
   font-size: 1vw;
 }
 
+<<<<<<< HEAD
 .detalhe{
   width: 60px;
   height: 4px;
@@ -105,78 +136,110 @@ body {
 .button{
   background-color: var(--cor-primaria);
   color: var(--font-p);
+=======
+.button {
+  background-color: crimson;
+  color: white;
+>>>>>>> 86c86e589a55819fa260c7768fa1036e718ddaf9
   align-self: start;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
+<<<<<<< HEAD
   transition: .5s;
 }
 
 .button:hover{
   background-color: rgb(146, 34, 57);
   transition: .5s;
+=======
+  transition: 0.3s;
+>>>>>>> 86c86e589a55819fa260c7768fa1036e718ddaf9
 }
 
-.div_img{
+.button:hover {
+  background-color: rgb(149, 73, 221);
+  color: rgb(48, 28, 66);
+}
+
+.div_img {
   width: 100%;
 }
 
-.imagem{
+.imagem {
   width: 100%;
-
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
 }
 
-h1{
+h1 {
   margin: 0;
 }
 
-h2{
+h2 {
   display: inline;
   margin: 0px;
 }
 
-.vantagem{
-  text-align: right;
-  justify-items: end;
-  align-self: center;
-  margin-right: 20px;
+.vantagem {
   font-size: 4vw;
   color: var(--text-des);
   text-transform: uppercase;
+<<<<<<< HEAD
   background-image: var(--onda-claro-svg);
+=======
+  position: relative;
+>>>>>>> 86c86e589a55819fa260c7768fa1036e718ddaf9
 }
 
+.section-onda {
+  text-align: right;
+  align-self: center;
+  padding: 30px;
+  background-image: url("./imagem/svg_verdade/onda.svg");
 
-.caixa2{
+}
+
+.caixa2 {
   padding: 20px;
   background-color: var(--fundo2);
 }
 
-
-
-.svg{
+.svg {
   width: 2.3rem;
 }
 
-.caixa_svg{
+.caixa_svg {
   display: grid;
   grid-template-columns: 1.6rem 1fr;
   gap: 10px 20px;
   padding: 20px;
-
+  box-sizing: border-box;
 }
 
-.caixa_svg h2{
+.caixa_svg:hover {
+  border-left: solid red 5px;
+}
+
+.caixa2 section:nth-child(odd) {
+  background-color: rgb(170, 139, 139);
+}
+
+.caixa_svg h2 {
   align-self: center;
+<<<<<<< HEAD
   color: var(--font-p);
+=======
+>>>>>>> 86c86e589a55819fa260c7768fa1036e718ddaf9
 }
 
-.caixa_svg p{
+.caixa_svg p {
   grid-column: 2;
   color: var(--font-p);
 }
 
-footer{
+footer {
   width: 100%;
   padding: 40px;
   background-color: var(--footer);
@@ -186,3 +249,68 @@ footer{
   color: var(--font-p);
 }
 
+
+@media screen and (max-width: 1000px){
+  .mini_body{
+    padding: 10px;
+  }
+  
+  .grid{
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 10px;
+  }
+  .title_caix1::after{
+    display: none;
+  }
+
+  .caixa1{
+    justify-items: center;
+    height: auto;
+  }
+
+  .title_caix1{
+    font-size: 6.0vw;
+    text-align: center;
+  }
+
+  .p_caixa1{
+    font-size: 4.0vw;
+    text-align: center;
+  }
+
+  .button{
+    font-size: 5.0vw;
+  }
+
+  .section-onda{
+    text-align: center;
+  }
+
+  .vantagem{
+    font-size: 9vw;
+    text-align: center;
+  }
+
+  .caixa_svg{
+    width: 100%;
+  }
+
+  .title{
+    font-size: 8.0vw;
+  }
+}
+
+@media screen and (max-width: 390px){
+  .caixa_svg{
+    padding: 14px;
+  }
+
+  .caixa_svg h2{
+    font-size: 7.0vw;
+  }
+
+  .caixa_svg p{
+    font-size: 6.0vw;
+  }
+}

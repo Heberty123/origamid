@@ -1,0 +1,694 @@
+
+.header-index{
+    width: 100%;
+    height: 96.3px;
+    background-color: black;
+}
+
+.header-div{
+    max-width: 1200px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.menus {
+    display: flex;
+    align-items: center;
+    gap: 30px
+}
+
+.menu {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+.menu::before {
+    content: "";
+    width: 0%;
+    height: 2px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 25px;
+    transition: 0.3s;
+}
+
+
+.menu:hover::before {
+    width: 100%;
+}
+
+
+.introducao-bac{
+    width: 100%;
+    background-color: beige;
+    box-shadow: inset 0 -120px white;
+}
+
+
+.introducao-container{
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.introducao-contexto{
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 70%;
+    padding-bottom: 200px;
+    box-sizing: border-box;
+    justify-items: right;
+}
+
+.titulo-home{
+    font-size: 2.6rem;
+}
+
+.dot_yellow{
+    color: yellow;
+    border-radius: 5px;
+}
+
+.introducao{
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+.button_introducao{
+    display: flex;
+    text-decoration: none;
+    font-size: 1.6rem;
+    width: 30%;
+    color: black;
+    height: 40px;
+    background-color: yellow;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-home{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.the-bikes{
+    width: 100%;
+    height: auto;
+    max-width: 1400px;
+    box-sizing: border-box;
+    padding: 40px 20px;
+    margin: 0 auto;
+}
+
+.title-escolha{
+    font-size: 3.8rem;
+    margin-bottom: 40px;
+    padding-left: 130px;
+}
+
+.lista-bike{
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.li-bike{
+    list-style: none;
+}
+
+.li-bike:hover > .subtitle-li::before{
+    width: 5%;
+    transition: 0.3s;
+}
+
+.lista-bike img{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+
+}
+
+.subtitle-li{
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.subtitle-li::before{
+    content: "";
+    display: inline-block;
+    width: 2.5%;
+    height: 7px;
+    background-color: rgb(177, 177, 22);
+    transition: 0.3s;
+}
+
+.preco-li{
+    font-size: 1.2rem;
+    padding-left: 20px;
+    margin-top: 7px;
+}
+
+.background-tecnologia{
+    background-color: rgb(0, 0, 0);
+    box-shadow: inset 0 120px white, inset 0 -120px white;
+}
+
+.intro-tecnologia{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 0px auto;
+
+}
+
+.contexto-tecnologia{
+
+}
+
+.title-tecnologia{
+    font-size: 1.8rem;
+    color: rgb(187, 187, 168);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.frase-tecnologia{
+    font-size: 2.8rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.descricao-tecnologia{
+    font-size: 1.8rem;
+    color: rgb(228, 234, 240);
+    margin-bottom: 15px;
+}
+
+
+.modelo-escolha{
+    color: yellow;
+    font-size: 2.3rem;
+    display: inline-block;
+    margin-bottom: 90px;
+    position: relative;
+}
+
+.modelo-escolha::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: yellow;
+    top: 43px;
+}
+
+.tecnologias-grid{
+    display: flex;
+    gap: 30px;
+    color: aliceblue;
+}
+
+.tecnologia{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tec-motor{
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.tec-rastreador{
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.tec-motor::before{
+    content: "";
+    background-image: url("../IMG/icones/eletrica.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -40px;
+    left: -10px;
+}
+
+.tec-rastreador::before{
+    content: "";
+    background-image: url("../IMG/icones/rastreador.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -40px;
+    left: -10px;
+}
+
+.especifico-desc{
+    font-size: 1.1rem;
+}
+
+.imagem-tecnologia img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+/*   Parceiros   */
+
+.section-parceiros{
+    width: 100%;
+    max-width: 1400px;
+    margin: 70px auto 80px auto;
+    box-sizing: border-box;
+}
+
+.title-parceiros{
+    font-size: 4.3rem;
+    padding-left: 60px;
+    margin-bottom: 50px;
+}
+
+.parceiros{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.lista-parceiros{
+    list-style: none;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.lista-parceiros img{
+    width: 100%;
+    max-width: 177px; 
+}
+
+.lista-parceiros:nth-child(n+5){
+    border-top: 1px solid rgb(212, 200, 200);
+    border-left: 1px solid rgb(212, 200, 200);
+}
+
+.lista-parceiros:nth-child(n+1){
+    border-left: 1px solid rgb(212, 200, 200);
+}
+
+.lista-parceiros:nth-child(1){
+    border-left: none;
+}
+
+.lista-parceiros:nth-child(5){
+    border-left: none;
+}
+
+.depoimentos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-depoimento{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-motivacional{
+    background-color: yellow;
+    width: 100%;
+    padding: 70px 40px 90px 100px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    box-sizing: border-box;
+    position: relative;
+    text-align: left;
+    align-items: center;
+}
+
+.box-motivacional::before{
+    content: "";
+    display: inline-block;
+    background-image: url("../IMG/dec/bottom-right-p.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transform: rotate(179deg);
+    top: 40px;
+    left: 40px
+}
+
+.frase-motivacional{
+    font-size: 2.3rem;
+    position: relative;
+}
+
+
+.case-amo, .case-pedalar{
+    position: relative;
+}
+
+.case-pedalar::before{
+    content: '"';
+    display: inline-block;
+    position: absolute;
+    font-size: 3.6rem;
+    left: -20px;
+}   
+
+.case-amo::after{
+    content: '"';
+    display: inline-block;
+    position: absolute;
+    font-size: 3.6rem;
+    right: -15px;
+}
+
+.autografa{
+    text-align: right;
+    position: relative;
+}
+
+.autografa::before{
+    content: "";
+    display: inline-block;
+    background-image: url("../IMG/dec/bottom-left.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transform: rotate(269deg);
+    right: -4px;
+    top: 20px;
+}
+
+.seguros-background{
+    width: 100%;
+    height: 100%;
+    max-height: 710px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: rgb(151, 139, 139);
+}
+
+.seguro-grid{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    gap: 40px;
+    box-sizing: border-box;
+    padding: 60px 0px 60px 0px;
+    margin: 0 auto;
+}
+
+.title-seguro{
+    grid-column: span 2;
+    font-size: 4.6rem;
+}
+
+
+.prata-item{
+    background-color: rgb(97, 87, 87);
+    padding: 40px 60px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    height: 80%;
+}
+
+.title-prata{
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+}
+
+.preco-prata{
+    position: relative;
+    font-size: 2.4rem;
+}
+
+.preco-prata::before{
+    content: "mensal";
+    font-size: 1.2rem;
+    display: inline-block;
+    position: absolute;
+    top: 35px;
+    left: 55px;
+}
+
+.lista-vantagens-prata{
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+    list-style: none;
+    padding: 30px 0px;
+    gap: 20px;
+}
+
+.vantagens-prata{
+    position: relative; 
+    font-size: 1.2rem;
+}
+
+.vantagens-prata::before{
+    content: "";
+    display: inline-block;
+    background-image: url("../IMG/icones/lista.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: -45px;
+    bottom: -18px;
+}
+
+.button-prata{
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: aquamarine;
+    grid-column: 1/-1;
+    width: 40%;
+}
+
+
+.ouro-item{
+    background-color: rgb(97, 87, 87);
+    padding: 40px 60px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    height: 100%;
+}
+
+.title-ouro{
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+}
+
+.preco-ouro{
+    position: relative;
+    font-size: 2.4rem;
+}
+
+.preco-ouro::before{
+    content: "mensal";
+    display: inline-block;
+    position: absolute;
+    font-size: 1.2rem;
+    left: 50px;
+    top: 35px;
+}
+
+
+.lista-vantagens-ouro{
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+    list-style: none;
+    padding: 30px 0px;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.vantagens-ouro{
+    position: relative; 
+    font-size: 1.2rem;
+}
+
+.vantagens-ouro::before{
+    content: "";
+    display: inline-block;
+    background-image: url("../IMG/icones/lista.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: -45px;
+    bottom: -18px;
+}
+
+.button-ouro{
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: aquamarine;
+    grid-column: 1/-1;
+    width: 40%;
+}
+
+.footer-index{
+    width: 100%;
+    color: white;
+    background-color: rgb(110, 102, 93);
+}
+
+.footer-box-index{
+    width: 100%;
+    max-width: 1200px;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 1fr auto;
+    margin: 0 auto;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-contato{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.telefone{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.email{
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    width: 70%;
+}
+
+.endereco{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cidade{
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    width: 70%;
+}
+
+.Redes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.Redes li{
+    list-style: none;
+}
+
+.informacao-footer-index{
+    font-size: 2rem;
+    margin-bottom: 35px;
+}
+
+.lista-informacoes{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.lista-inf{
+    margin-bottom: 20px;
+}
+
+.direitos-autorais-footer{
+    margin-top: 50px;
+    grid-column: span 3;
+}
+
+/*   Responsividade   */
+
+@media screen and (max-width: 800px) {
+    .parceiros{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .lista-parceiros:nth-child(3){
+        border-left: none;
+    }
+
+    .lista-parceiros:nth-child(7){
+        border-left: none;
+    }
+    
+    .lista-parceiros:nth-child(n+3){
+        border-top: 1px solid rgb(212, 200, 200);
+    }
+
+   
+}
