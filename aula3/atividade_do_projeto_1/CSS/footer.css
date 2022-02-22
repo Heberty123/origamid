@@ -1,0 +1,81 @@
+.footer-index{
+    width: 100%;
+    color: white;
+    background-color: rgb(110, 102, 93);
+}
+
+.footer-box-index{
+    width: 100%;
+    max-width: 1200px;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 1fr auto;
+    margin: 0 auto;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-contato{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.telefone{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.email{
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    width: 70%;
+}
+
+.endereco{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cidade{
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    width: 70%;
+}
+
+.Redes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.Redes li{
+    list-style: none;
+}
+
+.informacao-footer-index{
+    font-size: 2rem;
+    margin-bottom: 35px;
+}
+
+.lista-informacoes{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.lista-inf{
+    margin-bottom: 20px;
+}
+
+.direitos-autorais-footer{
+    margin-top: 50px;
+    grid-column: span 3;
+}

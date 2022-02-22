@@ -1,0 +1,119 @@
+.div-title{
+    width: 100%;
+    padding: 60px 0px;
+    background-color: aqua;
+    position: relative;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+}
+
+.container::after{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../IMG/icones/estoque.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 20px;
+    right: 5px;
+}
+
+.dot-yellow{
+    color: yellow;
+}
+
+.container > p{
+    font-size: 1.9rem;
+    margin-bottom: 5px;
+}
+
+.container > h1{
+    font-size: 4.1rem;
+}
+
+.div-bicicletas{
+    width: 100%;
+    max-height: 460px;
+    margin: 40px 0px;
+}
+
+.div-bicicletas:nth-child(2){
+    background-image: linear-gradient(to right, rgb(255, 255, 255) 30%, rgb(189, 118, 118) 0%);
+}
+
+.bicicleta-container{
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+
+.img-bike > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.grid-bike-conteudo{
+    display: grid;
+}
+
+.grid-bike-conteudo > h1{
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.grid-bike-conteudo > p{
+    font-size: 1.0rem;
+    margin-bottom: 30px;
+    
+}
+
+.grid-bike-conteudo > div ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grid-bike-conteudo > div ul{
+    font-size: 1.3rem;
+}
+
+.grid-bike-conteudo > div a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    display: grid;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.grid-bike-conteudo > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+
+
+
