@@ -1,0 +1,441 @@
+.dot-yellow{
+    color: yellow;
+}
+
+.back-principal{
+    background-color: aquamarine;
+}
+
+.conteudo{
+    background-color: aquamarine;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 0px 20px;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px 20px 40px 20px;
+}
+
+
+.conteudo > p{
+    grid-column: span 2;
+    font-size: 2.2rem;
+}
+
+.conteudo > h1{
+    grid-column: span 2;
+    font-size: 4.2rem;
+    margin-bottom: 30px;
+}
+
+.box-imgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    height: 420px;
+    gap: 20px;
+}
+
+.box-imgs img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.nimbus{
+    grid-column: span 2;
+    grid-row: span 2;
+    z-index: 1;
+}
+
+.magic{
+    grid-column: 1;
+    z-index: 1;
+}
+
+.nebula{
+    z-index: 1;
+}
+
+.descricao{
+
+}
+
+.descricao p:nth-child(1){
+    font-size: 1.8rem;
+}
+
+.descricao div{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px 20px;
+    padding: 20px 0px;
+}
+
+.descricao > div > a{
+    font-size: 1.8rem;
+    padding: 15px 20px;
+    background-color: yellow;
+    grid-row: span 2;
+}
+
+
+.descricao > div > div{
+    padding: 0px;
+    display: flex;
+    width: auto;
+}
+
+.descricao > div > div > p{
+    display: flex;
+    padding: 5px 10px;
+    border-radius: 4px;
+    gap: 0px 5px;
+    width: auto;
+    align-items: center;
+    background-color: beige;
+    font-size: 1rem !important;
+}
+
+.entrega::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../IMG/icones/entrega.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.estoque::before{
+    content: '';
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-image: url("../IMG/icones/estoque.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.title-informacao{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.lista-vantagens{
+    background-color: bisque;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    padding: 40px;
+}
+
+.lista-vantagens li{
+    list-style: none;
+}
+
+.lista-vantagens > li h2{
+    margin-bottom: 10px;
+    
+}
+
+.lista-vantagens > li > img{
+    width: 30px;
+    margin-bottom: 5px;
+}
+
+.title-ficha{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.lista-descricao{
+    list-style: none;
+    background-color: burlywood;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.lista-descricao li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 0.6px solid black;
+
+}
+
+.lista-bikes{
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title-other-bikes{
+    font-size: 3.5rem;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.title-other-bikes::before{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../IMG/dec/top-left-p.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 200px;
+    left: 15px;
+}
+
+.lista-bike{
+    display: flex;
+    gap: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    padding: 20px 0px;
+    align-content: center;
+}
+
+.li-bike{
+    list-style: none;
+    min-width: 280px;
+    height: 100%;
+}
+
+.li-bike:hover > .subtitle-li::before{
+    width: 5%;
+    transition: 0.3s;
+}
+
+.lista-bike img{
+    width: 100%;
+    height: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 4px;
+
+}
+
+.subtitle-li{
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.subtitle-li::before{
+    content: "";
+    display: inline-block;
+    width: 2.5%;
+    height: 7px;
+    background-color: rgb(177, 177, 22);
+    transition: 0.3s;
+}
+
+.preco-li{
+    font-size: 1.2rem;
+    padding-left: 20px;
+    margin-top: 7px;
+}
+
+.back-seguro{
+    background-color: darkkhaki;
+    box-shadow: inset 0 -120px rgb(110, 102, 93), inset 0 120px rgb(255, 255, 255);
+    width: 100%;
+}
+
+.seguro{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    padding: 0px 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.seguro > div > h2{
+    font-size: 3.9rem;
+    margin-bottom: 30px;
+}
+
+.seguro > div > p{
+    font-size: 1.7rem;
+    margin-bottom: 40px;
+
+}
+
+.seguro > div > a{
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    background-color: yellow;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.seguro img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.seguro > div{
+    height: auto;
+    box-sizing: border-box;
+    padding: 180px 0px;
+    position: relative;
+}
+
+.seguro > div::after{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../IMG/dec/bottom-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 20px;
+}
+
+@media screen and (max-width: 922px) {
+    .box-imgs{
+        gap: 20px 0px;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .nimbus{
+        grid-row: 1;
+    }
+
+    .magic{
+        width: 100%;
+        grid-row: 2;
+    }
+
+    .nebula{
+        width: 100%;
+        grid-row: 3;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .conteudo{
+        gap: 20px 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .box-imgs{
+        grid-row: 4;
+        gap: 20px 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .title-other-bikes{
+        font-size: 2.5rem;
+    }
+
+    .magic{
+
+    }
+
+    .nebula{
+        grid-row: 2;
+    }
+
+    .seguro > div > h2{
+        font-size: 2.4rem;
+        margin-bottom: 30px;
+    }
+    
+    .seguro > div > p{
+        font-size: 1.2rem;
+    }
+    
+    .seguro > div > a{
+        text-decoration: none;
+        padding: 15px 30px;
+        border-radius: 4px;
+        background-color: yellow;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .seguro{
+        grid-template-columns: 1fr;
+        box-shadow: inset 0 -120px rgb(110, 102, 93), inset 0 120px darkkhaki;
+    }
+
+    .seguro > div{
+        grid-row: 1;
+        padding: 20px 0px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .box-imgs{
+        width: 100%;
+        gap: 10px 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .descricao > div{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .descricao > div > a{
+        width: 40%;
+        text-align: center;
+        min-width: 130px;
+        font-size: 1.3rem;
+    }
+
+    .lista-vantagens{
+        gap: 20px 20px;
+    }
+
+    .magic{
+        grid-row: 3;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .lista-vantagens{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 30px 0px;
+    }
+
+
+    .title-other-bikes{
+        font-size: 2.1rem;
+        text-align: center;
+    }
+
+}

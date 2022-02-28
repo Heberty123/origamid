@@ -13,3 +13,15 @@ function criaObjecto(nome, ano, autor){
 
 let resultado = criaObjecto('O Senhor dos Anéis', 1954, 'J. R. R. TOLKIEN');
 console.log(resultado);
+
+
+
+function coordenadaMouse(event) {
+    const coordernadas = {
+        x: event.x,
+        y: event.y,
+    };
+    console.log(coordernadas)
+}
+
+window.addEventListener("mousemove", coordenadaMouse);

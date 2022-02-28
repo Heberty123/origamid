@@ -1,0 +1,72 @@
+.principal{
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.dot-yellow{
+    color: yellow;
+}
+
+.title{
+    max-width: 1200px;
+    padding: 70px 20px;
+    margin: 0 auto;
+}
+
+.title p {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+.title h1{
+    font-size: 3.6rem;
+}
+
+.termos{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.termos h2{
+    font-size: 1.7rem;
+    margin-bottom: 40px;
+}
+
+.mgT{
+    margin-top: 60px;
+}
+
+.termos p{
+    font-size: 1.0rem;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px){
+    .title > p{
+        font-size: 1.4rem;
+    }
+    
+    .title > h1{
+        font-size: 2.3rem;
+    }
+
+    .termos h2{
+        font-size: 1.9rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .title > p{
+        font-size: 1.2rem;
+    }
+    
+    .title > h1{
+        font-size: 1.7rem;
+    }
+
+    .termos h2{
+        font-size: 1.5rem;
+    }
+}
+
