@@ -1,10 +1,14 @@
+body{
+    font-family: var(--font-roboto);
+}
+
 .principal{
     width: 100%;
     margin-bottom: 60px;
 }
 
-.dot-yellow{
-    color: yellow;
+.principal > div:nth-child(1){
+    background-color: var(--cor-bg-seguros);
 }
 
 .title{
@@ -15,21 +19,24 @@
 
 .title p {
     font-size: 1.7rem;
+    color: var(--cor-bg-subtitle);
     margin-bottom: 15px;
 }
 
 .title h1{
     font-size: 3.6rem;
+    color: var(--cor-bg-title);
 }
 
 .termos{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 80px 20px;
 }
 
 .termos h2{
     font-size: 1.7rem;
+    font-family: var(--font-poppins);
     margin-bottom: 40px;
 }
 
@@ -39,6 +46,8 @@
 
 .termos p{
     font-size: 1.0rem;
+    color: var(--cor-title-cinza);
+    font-family: var(--font-poppins);
     margin-bottom: 20px;
 }
 

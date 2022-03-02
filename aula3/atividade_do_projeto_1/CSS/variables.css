@@ -1,0 +1,30 @@
+:root{
+    --cor-bg-black: rgb(0, 0, 0);
+    --cor-bg-title: #ffffff;
+    --cor-des-amarelo: #ffbb00;
+    --cor-amarelo-escuro: #d1a428;
+    --cor-title-button: #332200;
+    --cor-bg-subtitle: #b2b2b2;
+    --cor-title-cinza: #595959;
+    --cor-text-button: #342300;
+    --cor-bg-seguros: #111;
+    --cor-button-prata: #2e2e2e;
+    --cor-fundo-white: #f7f7f7;
+    --cor-borda-input: #f3f3f3;
+    --cor-sombra-form: #ececec;
+    --cor-borda-local: #f0f0f0;
+    --cor-text-nimbus: #9b9a98;
+    --cor-border-bottom: #0e0e0e;
+
+    --font-Montserrat: 'Montserrat', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-satisfy: 'Satisfy', cursive;
+    --font-indie: 'Indie Flower', cursive;
+}
+
+
+
+.dot-yellow{
+    color: var(--cor-des-amarelo);
+}

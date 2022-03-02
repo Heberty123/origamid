@@ -1,13 +1,13 @@
-.dot-yellow{
-    color: yellow;
+body{
+    font-family: var(--font-roboto);
 }
 
 .back-principal{
-    background-color: aquamarine;
+    background-color: var(--cor-bg-seguros);
 }
 
 .conteudo{
-    background-color: aquamarine;
+    background-color: var(--cor-bg-seguros);
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
@@ -19,13 +19,18 @@
 
 .conteudo > p{
     grid-column: span 2;
-    font-size: 2.2rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--cor-bg-subtitle);
+    margin-bottom: 10px;
 }
 
 .conteudo > h1{
     grid-column: span 2;
     font-size: 4.2rem;
-    margin-bottom: 30px;
+    font-weight: 600;
+    color: var(--cor-bg-title);
+    margin-bottom: 40px;
 }
 
 .box-imgs{
@@ -56,12 +61,9 @@
     z-index: 1;
 }
 
-.descricao{
-
-}
-
 .descricao p:nth-child(1){
     font-size: 1.8rem;
+    color: var(--cor-bg-subtitle);
 }
 
 .descricao div{
@@ -73,9 +75,15 @@
 }
 
 .descricao > div > a{
-    font-size: 1.8rem;
-    padding: 15px 20px;
-    background-color: yellow;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 4px;
+    color: var(--cor-title-button);
+    background-color: var(--cor-des-amarelo);
     grid-row: span 2;
 }
 
@@ -93,9 +101,11 @@
     gap: 0px 5px;
     width: auto;
     align-items: center;
-    background-color: beige;
-    font-size: 1rem !important;
+    background-color: var(--cor-bg-black);
+    color: var(--cor-text-nimbus);
+    font-size: 0.8rem !important;
 }
+
 
 .entrega::before{
     content: '';
@@ -120,12 +130,14 @@
 }
 
 .title-informacao{
-    font-size: 1.2rem;
+    font-size: 1rem;
+    color: var(--cor-bg-title);
+    font-family: var(--font-poppins);
     margin-bottom: 10px;
 }
 
 .lista-vantagens{
-    background-color: bisque;
+    background-color: var(--cor-bg-black);
     display: grid;
     gap: 30px;
     grid-template-columns: 1fr 1fr;
@@ -141,7 +153,11 @@
 
 .lista-vantagens > li h2{
     margin-bottom: 10px;
-    
+    color: var(--cor-bg-title); 
+}
+
+.lista-vantagens > li p{
+    color: var(--cor-bg-subtitle); 
 }
 
 .lista-vantagens > li > img{
@@ -150,24 +166,30 @@
 }
 
 .title-ficha{
-    font-size: 1.2rem;
+    font-size: 1rem;
+    color: var(--cor-bg-title);
+    font-family: var(--font-poppins);
     margin-bottom: 10px;
 }
 
 .lista-descricao{
     list-style: none;
-    background-color: burlywood;
+    background-color: var(--cor-bg-black);
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     padding: 30px;
 }
 
+.lista-descricao > li h2, p{
+    color: var(--cor-bg-subtitle);
+}
+
 .lista-descricao li{
     display: flex;
     justify-content: space-between;
     padding: 10px 0px;
-    border-bottom: 0.6px solid black;
+    border-bottom: 2px solid var(--cor-border-bottom);
 
 }
 
@@ -181,6 +203,8 @@
     font-size: 3.5rem;
     margin-top: 40px;
     margin-bottom: 30px;
+    font-family: var(--font-poppins);
+    font-weight: 600;
     position: relative;
 }
 
@@ -189,7 +213,7 @@
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-image: url("../IMG/dec/top-left-p.svg");
+    background-image: url("../IMG/dec/bottom-left.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -230,10 +254,12 @@
 }
 
 .subtitle-li{
-    font-size: 1.7rem;
+    font-size: 1.9rem;
+    text-transform: capitalize;
     display: flex;
     align-items: center;
     gap: 10px;
+    font-family: var(--font-roboto);
     margin-top: 10px;
 }
 
@@ -248,13 +274,15 @@
 
 .preco-li{
     font-size: 1.2rem;
+    font-weight: 600;
     padding-left: 20px;
+    color: var(--cor-title-cinza);
     margin-top: 7px;
 }
 
 .back-seguro{
-    background-color: darkkhaki;
-    box-shadow: inset 0 -120px rgb(110, 102, 93), inset 0 120px rgb(255, 255, 255);
+    background-color: var(--cor-bg-seguros);
+    box-shadow: inset 0 -120px var(--cor-bg-black), inset 0 120px var(--cor-bg-title);
     width: 100%;
 }
 
@@ -269,11 +297,13 @@
 
 .seguro > div > h2{
     font-size: 3.9rem;
+    color: var(--cor-bg-title);
     margin-bottom: 30px;
 }
 
 .seguro > div > p{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    color: var(--cor-bg-subtitle);
     margin-bottom: 40px;
 
 }
@@ -282,7 +312,9 @@
     text-decoration: none;
     padding: 15px 30px;
     border-radius: 4px;
-    background-color: yellow;
+    font-weight: 600;
+    color: var(--cor-title-button);
+    background-color: var(--cor-des-amarelo);
     text-align: center;
     font-size: 1.4rem;
 }

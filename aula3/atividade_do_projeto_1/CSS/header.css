@@ -1,7 +1,9 @@
+@import url(variables.css);
+
 .header-index{
     width: 100%;
     height: auto;
-    background-color: black;
+    background-color: var(--cor-bg-black);
 }
 
 .header-div{
@@ -23,11 +25,14 @@
 }
 
 .menu {
-    text-decoration: none;
-    color: white;
     list-style: none;
     font-size: 1.4rem;
     position: relative;
+}
+
+.menu a {
+    color: var(--cor-bg-title);
+    text-decoration: none;
 }
 
 .menu::before {
@@ -35,7 +40,7 @@
     width: 0%;
     height: 2px;
     display: inline-block;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--cor-bg-title);
     position: absolute;
     top: 25px;
     transition: 0.3s;
@@ -47,6 +52,19 @@
 }
 
 /*   Responsividade   */
+
+
+@media screen and (max-width: 550px) {
+    .menu{
+        padding: 10px 15px;
+        border-radius: 4px;
+        background-color: var(--cor-bg-seguros);
+    }
+
+
+   
+}
+
 
 @media screen and (max-width: 550px) {
     .header-div{
@@ -61,3 +79,9 @@
    
 }
 
+
+@media screen and (max-width: 550px){
+    .menus{
+        justify-content: center;
+    }
+}

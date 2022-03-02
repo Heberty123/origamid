@@ -1,7 +1,12 @@
+body{
+    font-family: var(--font-roboto);
+}
+
+
 .div-title{
     width: 100%;
     padding: 60px 0px;
-    background-color: aqua;
+    background-color: var(--cor-bg-black);
     position: relative;
 }
 
@@ -19,26 +24,25 @@
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-image: url("../IMG/icones/estoque.svg");
+    background-image: url("../IMG/dec/top-right.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
     top: -20px;
-    right: 5px;
-}
-
-.dot-yellow{
-    color: yellow;
+    right: 15px;
 }
 
 .container > p{
     font-size: 1.9rem;
+    color: var(--cor-bg-subtitle);
     margin-bottom: 5px;
 }
 
 .container > h1{
-    font-size: 4.1rem;
+    font-size: 3.4rem;
+    color: var(--cor-bg-title);
+    font-family: var(--font-poppins);
 }
 
 .div-bicicletas{
@@ -47,7 +51,7 @@
 }
 
 .div-bicicletas:nth-child(2){
-    background-image: linear-gradient(to right, rgb(255, 255, 255) 30%, rgb(189, 118, 118) 0%);
+    background-image: linear-gradient(to right, rgb(255, 255, 255) 30%, var(--cor-bg-black) 0%);
 }
 
 
@@ -79,7 +83,7 @@
 .img-bike::after{
     content: 'R$ 4999';
     font-size: 1.2rem;
-    color: aliceblue;
+    color: var(--cor-bg-title);
     white-space: normal;
     width: 85px;
     height: 30px;
@@ -99,6 +103,9 @@
 
 .grid-bike-conteudo > h1{
     font-size: 2.3rem;
+    color: var(--cor-bg-black);
+    font-family: var(--font-poppins);
+    font-weight: 600;
     margin-top: 20px;
     margin-bottom: 20px;
     position: relative;
@@ -109,7 +116,7 @@
     display: inline-block;
     width: 15px;
     height: 8px;
-    background-color: yellow;
+    background-color: var(--cor-des-amarelo);
     position: absolute;
     top: -18px;
 }
@@ -119,7 +126,7 @@
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-image: url("../IMG/icones/estoque.svg");
+    background-image: url("../IMG/dec/top-right.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -131,13 +138,24 @@
 .grid-bike-conteudo > p{
     font-size: 1.0rem;
     margin-bottom: 30px;
-    
+    color: var(--cor-bg-black);
 }
 
-.grid-bike-conteudo > div ul{
+.bicicleta-container .title-escuro{
+    color: var(--cor-bg-title);
+}
+
+.bicicleta-container .p-escuro{
+    color: var(--cor-bg-subtitle);
+}
+
+.grid-bike-conteudo > div > ul{
     list-style: none;
     display: flex;
     flex-direction: column;
+    color: var(--cor-title-cinza);
+    font-weight: 600;
+    font-size: 1.1rem;
     gap: 15px;
 }
 
@@ -192,9 +210,6 @@
     background-position: center;
 }
 
-.grid-bike-conteudo > div ul{
-    font-size: 1.3rem;
-}
 
 .grid-bike-conteudo > div > div{
     display: grid;
@@ -203,10 +218,13 @@
 
 .grid-bike-conteudo > div a{
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     width: 80%;
     height: 25%;
-    background-color: yellow;
+    color: var(--cor-text-button);
+    background-color: var(--cor-des-amarelo);
+    font-family: var(--font-poppins);
+    font-weight: 600;
     border-radius: 4px;
     display: flex;
     gap: 5px;
@@ -220,6 +238,8 @@
     grid-template-columns: 1fr 1fr;
 }
 
+
+
 @media screen and (max-width: 800px){
 
     .bicicleta-container{
@@ -228,7 +248,7 @@
     }
 
     .background{
-        background-color: rgb(189, 118, 118);
+        background-color: var(--cor-bg-black);
     }
 
     .grid-bike-conteudo{
@@ -258,7 +278,7 @@
     }
 
     .container > h1{
-        font-size: 2.3rem;
+        font-size: 2.7rem;
     }
 
     .bicicleta-container{
