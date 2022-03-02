@@ -33,9 +33,10 @@
 .menu a {
     color: var(--cor-bg-title);
     text-decoration: none;
+    position: relative;
 }
 
-.menu::before {
+.menu a::before {
     content: "";
     width: 0%;
     height: 2px;
@@ -47,7 +48,7 @@
 }
 
 
-.menu:hover::before {
+.menu a:hover::before, .menu > a.ativo::before {
     width: 100%;
 }
 

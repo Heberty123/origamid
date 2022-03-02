@@ -47,7 +47,8 @@ body{
     margin: 0 auto;
     display: grid;
     margin-bottom: 90px;
-    grid-template-columns: auto 1fr;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr;
     gap: 20px 0px;
 }
 
@@ -60,8 +61,8 @@ body{
     background-color: var(--cor-bg-black);
     position: relative;
     width: 100%;
-    max-width: 483px;
     border-top-left-radius: 4px;
+    box-sizing: border-box;
     border-bottom-left-radius: 4px;
 }
 
@@ -80,12 +81,56 @@ body{
 
 .orcamento-opcoes > h2{
     color: var(--cor-bg-title);
-    width: 450px;
+    margin-bottom: 20px;
+    width: 100%;
 }
+
+.grid-input{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 20px   ;
+}
+
+.box-input{
+    padding: 15px 15px;
+    border-radius: 4px;
+    display: flex;
+    gap: 0px 15px;
+    background-color: aquamarine;
+}
+
+
+.label-bikcraft, .label-seguro{
+    
+}
+
 
 .orcamento-opcoes > div{
     color: var(--cor-bg-title);
 }
+
+.bikcraft-container{
+    width: 80%;
+    height: 100px;
+    background-color: aqua;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.seguro-container{
+    width: 80%;
+    height: 100px;
+    background-color: aqua;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#bikcraft:checked ~ .bikcraft-container, #seguro:checked ~ .seguro-container {
+    display: block;
+}
+
+
 
 
 .form{
@@ -94,6 +139,7 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(9, auto);
     gap: 20px 30px;
+    box-sizing: border-box;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     background-color: var(--cor-bg-title);

@@ -33,13 +33,26 @@
         <div class="box-contact">
             <div class="orcamento-opcoes">
                <h2>Bikcraft ou Seguro?</h2> 
-                <div>
-                    <input type="radio" name="tipo" value="bikcraft" id="bikcraft">  
-                    <input type="radio" name="tipo" value="bikcraft" id="seguro">  
+                <div class="grid-input">
+                    <div class="box-input">
+                        <input type="radio" name="tipo" value="bikcraft" id="bikcraft">  
+                        <label class="label-bikcraft" for="bikcraft">bikcraft</label>
+                    </div>
 
-                    <label for="bikcraft">bikcraft</label>
-                    <label for="seguro">seguro</label>
+                    <div class="box-input">
+                        <input type="radio" name="tipo" value="bikcraft" id="seguro">  
+                        <label class="label-seguro" for="seguro">seguro</label>
+                    </div>
                 </div>
+                
+                    <div class="bikcraft-container">
+                        <h1>Orçamento</h1>
+                    </div>
+
+                    <div class="seguro-container">
+                        <h1>Seguro</h1>
+                    </div>
+                
                  
                 <div class="div-javascript-orcamento">Javascript se vira</div>
                 
@@ -125,5 +138,6 @@
     <script src="JavaScript/orcamento.js"></script>
 
     
+    <script src="JavaScript/script.js"></script>
 </body>
 </html>
