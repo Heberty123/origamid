@@ -6,7 +6,7 @@ body{
 .div-title{
     width: 100%;
     padding: 60px 0px;
-    background-color: var(--cor-bg-black);
+    background-color: var(--cor-bg-seguros);
     position: relative;
 }
 
@@ -216,22 +216,46 @@ body{
     align-items: flex-end;
 }
 
-.grid-bike-conteudo > div a{
-    text-decoration: none;
-    font-size: 1.3rem;
-    width: 80%;
+.button-hover{
+    width: auto;
+    max-width: 200px;
     height: 25%;
-    color: var(--cor-text-button);
     background-color: var(--cor-des-amarelo);
-    font-family: var(--font-poppins);
-    font-weight: 600;
     border-radius: 4px;
     display: flex;
-    gap: 5px;
     align-items: center;
     justify-content: center;
 }
 
+.button-hover > a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: 1fr 26px;
+    color: var(--cor-text-button);
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    gap: 6px;
+}
+
+
+.grid-bike-conteudo > div a::after{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../IMG/icones/seta.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: 0.3s;
+}
+
+
+.button-hover:hover > .seta-hover::after{
+    margin-left: 6px;
+    transition: 0.3s;
+}
 
 .grid-bike-conteudo > div{
     display: grid;
@@ -283,6 +307,20 @@ body{
 
     .bicicleta-container{
         padding: 30px;
+    }
+
+    .button-hover{
+        height: auto;
+        max-width: 130px;
+        min-width: 129px;
+        font-size: 1.2rem;
+        padding: 0px 10px;
+        text-align: center;
+    }
+
+    .seta-hover{
+        align-items: center;
+        font-size: 1rem !important;
     }
 }
 

@@ -80,16 +80,27 @@ body{
 }
 
 .orcamento-opcoes > h2{
+    display: flex;
+    gap: 6px;
+    align-items: center;
     color: var(--cor-bg-title);
     margin-bottom: 20px;
     width: 100%;
 }
 
+.orcamento-opcoes > h2::before{
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 12px;
+    background-color: var(--cor-des-amarelo);
+}
+
 .grid-input{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    gap: 20px   ;
+    margin-bottom: 30px;
+    gap: 20px;
 }
 
 .box-input{
@@ -97,40 +108,214 @@ body{
     border-radius: 4px;
     display: flex;
     gap: 0px 15px;
-    background-color: aquamarine;
+    background-color: var(--cor-bg-seguros);
 }
 
-
-.label-bikcraft, .label-seguro{
-    
+.prata-seguro{
+    position: relative;
 }
 
+.prata-seguro::after{
+    content: 'R$ 199';
+    display: inline-block;
+    font-size: 1.7rem;
+    font-family: var(--font-poppins);
+    position: absolute;
+    right: 10px;
+    top: 17px;
+}
+
+.ouro-seguro{
+    position: relative;
+}
+
+.ouro-seguro::after{
+    content: 'R$ 299';
+    display: inline-block;
+    font-size: 1.7rem;
+    font-family: var(--font-poppins);
+    position: absolute;
+    right: 10px;
+    top: 17px;
+}
 
 .orcamento-opcoes > div{
     color: var(--cor-bg-title);
 }
 
 .bikcraft-container{
-    width: 80%;
-    height: 100px;
-    background-color: aqua;
+    width: 100%;
+    height: auto;
     margin-bottom: 20px;
     display: none;
 }
 
 .seguro-container{
-    width: 80%;
-    height: 100px;
-    background-color: aqua;
+    width: 100%;
+    height: auto;
     margin-bottom: 20px;
     display: none;
 }
 
-#bikcraft:checked ~ .bikcraft-container, #seguro:checked ~ .seguro-container {
-    display: block;
+.container_block{
+    display: block !important;
+}
+
+.container-escolha > h2{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.container-escolha > h2::before{
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 12px;
+    background-color: var(--cor-des-amarelo);
 }
 
 
+.escolha_sua{
+    width: 100%;
+    background-color: var(--cor-bg-seguros);
+    font-family: var(--font-poppins);
+    border-radius: 4px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.box-escolhida{
+    width: 100%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.box-escolhida-block{
+    display: grid;
+}
+
+.box-escolhida ul{
+    color: black
+}
+
+.box-escolhida > ul li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 13px;
+}
+
+.box-escolhida > ul li:nth-child(1)::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../IMG/icones/eletrica.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.box-escolhida > ul li:nth-child(2)::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../IMG/icones/carbono.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.box-escolhida > ul li:nth-child(3)::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../IMG/icones/velocidade.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.box-escolhida > ul li:nth-child(4)::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../IMG/icones/rastreador.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.box-nimbus{
+    position: relative;
+}
+
+.box-nimbus::after{
+    content: 'R$ 4999';
+    display: inline-block;
+    color: black;
+    font-size: 1.7rem;
+    position: absolute;
+    right: 10px;
+    top: -60px;
+}
+
+.box-magic{
+    position: relative;
+}
+
+.box-magic::after{
+    content: 'R$ 2499';
+    display: inline-block;
+    color: black;
+    font-size: 1.7rem;
+    position: absolute;
+    right: 10px;
+    top: -60px;
+}
+
+
+.box-nebula{
+    position: relative;
+}
+
+.box-nebula::after{
+    content: 'R$ 3999';
+    display: inline-block;
+    color: black;
+    font-size: 1.7rem;
+    position: absolute;
+    right: 10px;
+    top: -60px;
+}
+
+
+.box-escolhida img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.class-white-title{
+    background-color: var(--cor-bg-title);
+    color: var(--cor-bg-black);
+}
 
 
 .form{
@@ -272,9 +457,35 @@ body{
     }
 }
 
+@media screen and (max-width: 500px){
+    .grid-input{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .box-escolhida{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 15px;
+        padding: 10px;
+    }
+}
+
 @media screen and (max-width: 400px){
     .button{
         max-width: 157px;
         min-width: 156px;
+    }
+
+    .box-escolhida-block::after{
+        display: none;
+    }
+
+    .prata-seguro::after{
+        display: none;
+    }
+
+    .ouro-seguro::after{
+        display: none;
     }
 }

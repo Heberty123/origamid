@@ -269,20 +269,6 @@ body{
     transition: 0.2s;
 }
 
-.form > div:nth-child(5)::after{
-    content: '';
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-image: url("../IMG/bikcraft.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-
-}
 
 .centralizar-locais{
     width: 100%;
@@ -376,6 +362,7 @@ body{
         width: 100%;
         box-sizing: border-box;
         padding: 20px;
+        padding-left: 40px;
         border-top-right-radius: 4px;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
@@ -403,6 +390,10 @@ body{
         color: brown;
         grid-row: 3;
     }
+
+    .loja-online::before{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 620px){
@@ -423,5 +414,21 @@ body{
 
     .sec2{
         grid-row: 3;
+    }
+}
+
+@media screen and (max-width: 370px){
+    .form::after{
+        display: none;
+    }
+    
+    .title::after{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 310px){
+    .loja-online{
+        padding: 20px;
     }
 }
