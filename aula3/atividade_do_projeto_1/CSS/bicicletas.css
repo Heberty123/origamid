@@ -51,7 +51,7 @@ body{
 }
 
 .div-bicicletas:nth-child(2){
-    background-image: linear-gradient(to right, rgb(255, 255, 255) 30%, var(--cor-bg-black) 0%);
+    background-image: linear-gradient(to right, var(--cor-fundo-white) 30%, var(--cor-bg-black) 0%);
 }
 
 
