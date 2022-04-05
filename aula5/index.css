@@ -1,0 +1,75 @@
+header{
+    
+}
+
+.back-sup-header{
+    background: #122ab2;
+}
+
+.back-sup-header section{
+    color: white;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-inf-header{
+    background: #2c70ff;
+}
+
+.back-inf-header div{
+    color: white;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-inf-header div h1{
+    font-size: 2.7rem;
+}
+
+.back-inf-header div nav{
+    display: flex;
+    gap: 15px;
+}
+
+main{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.box-title{
+    font-size: 3rem;
+    padding: 50px 10px;
+    border-bottom: 2px solid #3576ff;
+}
+
+main article{
+    display: flex;
+    gap: 20px;
+    padding: 60px 10px;
+    border-bottom: 2px solid #3576ff;
+}
+
+main article section h1{
+    font-size: 3rem;
+}
+
+main article section p{
+    font-size: 1.3rem;
+}
+
+.imagem-desenho{
+    width: auto;
+    height: 300px;
+}
+
+.title-produto{
+    font-size: 3rem;
+    padding: 60px 10px;
+}
