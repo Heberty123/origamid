@@ -1,0 +1,22 @@
+section{
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid rgb(78, 71, 71);
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+section div{
+    width: 100%;
+    width: 180px;
+    flex: 1;
+    height: 50px;
+    background-color: tomato;
+}
+
+.privilegio{
+    flex: 2;
+}

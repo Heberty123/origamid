@@ -13,3 +13,17 @@ function criaObjecto(nome, ano, autor){
 
 let resultado = criaObjecto('O Senhor dos Anéis', 1954, 'J. R. R. TOLKIEN');
 console.log(resultado);
+
+
+
+
+
+
+
+function ativarButton(){
+    console.log("clicado no elemento: ", ativa);
+}
+
+let ativa = document.querySelector('.ativar');
+
+ativa.addEventListener('click', ativarButton);
