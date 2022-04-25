@@ -1,7 +1,12 @@
+body{
+    font-family: var(--font-roboto);
+}
+
+
 .div-title{
     width: 100%;
     padding: 60px 0px;
-    background-color: aqua;
+    background-color: var(--cor-bg-seguros);
     position: relative;
 }
 
@@ -19,37 +24,36 @@
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-image: url("../IMG/icones/estoque.svg");
+    background-image: url("../IMG/dec/top-right.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
-    top: 20px;
-    right: 5px;
-}
-
-.dot-yellow{
-    color: yellow;
+    top: -20px;
+    right: 15px;
 }
 
 .container > p{
     font-size: 1.9rem;
+    color: var(--cor-bg-subtitle);
     margin-bottom: 5px;
 }
 
 .container > h1{
-    font-size: 4.1rem;
+    font-size: 3.4rem;
+    color: var(--cor-bg-title);
+    font-family: var(--font-poppins);
 }
 
 .div-bicicletas{
     width: 100%;
-    max-height: 460px;
     margin: 40px 0px;
 }
 
 .div-bicicletas:nth-child(2){
-    background-image: linear-gradient(to right, rgb(255, 255, 255) 30%, rgb(189, 118, 118) 0%);
+    background-image: linear-gradient(to right, var(--cor-fundo-white) 30%, var(--cor-bg-black) 0%);
 }
+
 
 .bicicleta-container{
     width: 100%;
@@ -62,8 +66,12 @@
     box-sizing: border-box;
     gap: 30px;
     margin: 0 auto;
+    position: relative;
 }
 
+.img-bike{
+    position: relative;
+}
 
 .img-bike > img{
     width: 100%;
@@ -72,43 +80,287 @@
     object-fit: cover;
 }
 
+.img-bike::after{
+    content: 'R$ 4999';
+    font-size: 1.2rem;
+    color: var(--cor-bg-title);
+    white-space: normal;
+    width: 85px;
+    height: 30px;
+    padding-top: 10px;
+    border-radius: 6px;
+    display: inline-block;
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}
+
 .grid-bike-conteudo{
     display: grid;
 }
 
 .grid-bike-conteudo > h1{
     font-size: 2.3rem;
+    color: var(--cor-bg-black);
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    margin-top: 20px;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.grid-bike-conteudo > h1::before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 8px;
+    background-color: var(--cor-des-amarelo);
+    position: absolute;
+    top: -18px;
+}
+
+.bicicleta-container::after{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../IMG/dec/top-right.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    top: 64px;
+    right: 40px;
 }
 
 .grid-bike-conteudo > p{
     font-size: 1.0rem;
     margin-bottom: 30px;
-    
+    color: var(--cor-bg-black);
 }
 
-.grid-bike-conteudo > div ul{
+.bicicleta-container .title-escuro{
+    color: var(--cor-bg-title);
+}
+
+.bicicleta-container .p-escuro{
+    color: var(--cor-bg-subtitle);
+}
+
+.grid-bike-conteudo > div > ul{
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    color: var(--cor-title-cinza);
+    font-weight: 600;
+    font-size: 1.1rem;
+    gap: 15px;
 }
 
-.grid-bike-conteudo > div ul{
-    font-size: 1.3rem;
+.grid-bike-conteudo > div > ul li{
+    display: flex;  
+    align-items: center;
+    height: 28px;
+    gap: 12px;
 }
 
-.grid-bike-conteudo > div a{
-    text-decoration: none;
-    font-size: 1.6rem;
+.grid-bike-conteudo > div > ul li:nth-child(1)::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 100%;
+    background-image: url("../IMG/icones/eletrica.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.grid-bike-conteudo > div > ul li:nth-child(2)::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 100%;
+    background-image: url("../IMG/icones/carbono.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.grid-bike-conteudo > div > ul li:nth-child(3)::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 100%;
+    background-image: url("../IMG/icones/velocidade.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.grid-bike-conteudo > div > ul li:nth-child(4)::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 100%;
+    background-image: url("../IMG/icones/rastreador.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.grid-bike-conteudo > div > div{
     display: grid;
-    justify-content: end;
     align-items: flex-end;
+}
+
+.button-hover{
+    width: auto;
+    max-width: 200px;
+    height: 25%;
+    background-color: var(--cor-des-amarelo);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-hover > a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: 1fr 26px;
+    color: var(--cor-text-button);
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    gap: 6px;
+}
+
+
+.grid-bike-conteudo > div a::after{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../IMG/icones/seta.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: 0.3s;
+}
+
+
+.button-hover:hover > .seta-hover::after{
+    margin-left: 6px;
+    transition: 0.3s;
 }
 
 .grid-bike-conteudo > div{
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+
+
+@media screen and (max-width: 800px){
+
+    .bicicleta-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .background{
+        background-color: var(--cor-bg-black);
+    }
+
+    .grid-bike-conteudo{
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .grid-bike-conteudo > div > div{
+        margin-top: 30px;
+    }
+
+    .grid-bike-conteudo > div > div a{
+        max-width: 201px;
+        min-width: 151px;
+        height: 50px;
+    }
+    
+    .grid-bike-conteudo > div ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-column: span 2;
+        margin-top: 10px;
+    }
+
+    .container > p{
+        font-size: 1.3rem;
+    }
+
+    .container > h1{
+        font-size: 2.7rem;
+    }
+
+    .bicicleta-container{
+        padding: 30px;
+    }
+
+    .button-hover{
+        height: auto;
+        max-width: 130px;
+        min-width: 129px;
+        font-size: 1.2rem;
+        padding: 0px 10px;
+        text-align: center;
+    }
+
+    .seta-hover{
+        align-items: center;
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (max-width: 350px){
+
+    .bicicleta-container{
+        padding: 20px;
+    }
+
+    .container{
+        text-align: center;
+    }
+    
+    .container > p{
+        font-size: 1.0rem;
+    }
+
+    .container > h1{
+        font-size: 1.9rem;
+    }
+
+    .grid-bike-conteudo > div > ul li{
+        font-size: 1.0rem;
+    }
+}
+
+
+@media screen and (max-width: 320px){
+    
+    .container{
+        text-align: center;
+    }
+    
+    .container > p{
+        font-size: 1.0rem;
+    }
+
+    .container > h1{
+        font-size: 1.9rem;
+    }
 }
 
 

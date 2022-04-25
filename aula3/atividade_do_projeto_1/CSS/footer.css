@@ -1,7 +1,7 @@
 .footer-index{
     width: 100%;
-    color: white;
-    background-color: rgb(110, 102, 93);
+    color: var(--cor-bg-title);
+    background-color: var(--cor-bg-black);
 }
 
 .footer-box-index{
@@ -18,35 +18,50 @@
 .contato{
     display: flex;
     flex-direction: column;
+    
 }
 
 .title-contato{
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-bottom: 30px;
+    font-family: var(--font-roboto);
+    font-weight: 600;
 }
 
 .telefone{
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 20px;
+    color: var(--cor-bg-subtitle);
+    font-family: var(--font-roboto);
+    font-weight: 600;
 }
 
 .email{
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-bottom: 20px;
-    border-bottom: 1px solid black;
+    color: var(--cor-bg-subtitle);
+    border-bottom: 1px solid var(--cor-bg-subtitle);
+    font-family: var(--font-roboto);
+    font-weight: 600;
     width: 70%;
 }
 
 .endereco{
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 20px;
     margin-bottom: 20px;
+    color: var(--cor-bg-subtitle);
+    font-family: var(--font-roboto);
+    font-weight: 600;
 }
 
 .cidade{
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-bottom: 20px;
-    border-bottom: 1px solid black;
+    color: var(--cor-bg-subtitle);
+    border-bottom: 1px solid var(--cor-bg-subtitle);
+    font-family: var(--font-roboto);
+    font-weight: 600;
     width: 70%;
 }
 
@@ -57,18 +72,22 @@
     gap: 30px;
 }
 
-.Redes li{
+.Redes > li{
     list-style: none;
+    font-family: var(--font-roboto);
+    font-weight: 600;
 }
 
 .informacao-footer-index{
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-bottom: 35px;
+    font-family: var(--font-roboto);
 }
 
 .lista-informacoes{
     list-style: none;
     font-size: 1.2rem;
+    color: var(--cor-bg-subtitle);
 }
 
 .lista-inf{
@@ -78,4 +97,27 @@
 .direitos-autorais-footer{
     margin-top: 50px;
     grid-column: span 3;
+    color: var(--cor-bg-subtitle);
+    font-family: var(--font-roboto);
+    font-weight: 600;
 }
+
+/* Responsividade here */
+
+@media screen and (max-width: 600px){
+    .title-parceiros{
+        padding: 0px 10px;
+        text-align: center;
+        font-size: 3.4rem;
+    }
+
+    .footer-box-index{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 50px;
+    }
+
+    .direitos-autorais-footer{
+        grid-column: 1;
+    }
+} 

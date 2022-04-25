@@ -1,0 +1,496 @@
+body{
+    font-family: var(--font-roboto);
+}
+
+.back-principal{
+    background-color: var(--cor-bg-seguros);
+}
+
+.conteudo{
+    background-color: var(--cor-bg-seguros);
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 0px 20px;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px 20px 40px 20px;
+}
+
+
+.conteudo > p{
+    grid-column: span 2;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--cor-bg-subtitle);
+    margin-bottom: 10px;
+}
+
+.conteudo > h1{
+    grid-column: span 2;
+    font-size: 4.2rem;
+    font-weight: 600;
+    color: var(--cor-bg-title);
+    margin-bottom: 40px;
+}
+
+.box-imgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    height: 420px;
+    gap: 20px;
+}
+
+.box-imgs img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.nimbus{
+    grid-column: span 2;
+    grid-row: span 2;
+    z-index: 1;
+}
+
+.magic{
+    grid-column: 1;
+    z-index: 1;
+}
+
+.nebula{
+    z-index: 1;
+}
+
+.descricao p:nth-child(1){
+    font-size: 1.8rem;
+    color: var(--cor-bg-subtitle);
+}
+
+.descricao div{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px 20px;
+    padding: 20px 0px;
+}
+
+.descricao > div > a{
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 4px;
+    color: var(--cor-title-button);
+    background-color: var(--cor-des-amarelo);
+    grid-row: span 2;
+}
+
+
+.descricao > div > div{
+    padding: 0px;
+    display: flex;
+    width: auto;
+}
+
+.descricao > div > div > p{
+    display: flex;
+    padding: 5px 10px;
+    border-radius: 4px;
+    gap: 0px 5px;
+    width: auto;
+    align-items: center;
+    background-color: var(--cor-bg-black);
+    color: var(--cor-text-nimbus);
+    font-size: 0.8rem !important;
+}
+
+
+.entrega::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../IMG/icones/entrega.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.estoque::before{
+    content: '';
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-image: url("../IMG/icones/estoque.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.title-informacao{
+    font-size: 1rem;
+    color: var(--cor-bg-title);
+    font-family: var(--font-poppins);
+    margin-bottom: 10px;
+}
+
+.lista-vantagens{
+    background-color: var(--cor-bg-black);
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    padding: 40px;
+}
+
+.lista-vantagens li{
+    list-style: none;
+}
+
+.lista-vantagens > li h2{
+    margin-bottom: 10px;
+    color: var(--cor-bg-title); 
+}
+
+.lista-vantagens > li p{
+    color: var(--cor-bg-subtitle); 
+}
+
+.lista-vantagens > li > img{
+    width: 30px;
+    margin-bottom: 5px;
+}
+
+.title-ficha{
+    font-size: 1rem;
+    color: var(--cor-bg-title);
+    font-family: var(--font-poppins);
+    margin-bottom: 10px;
+}
+
+.lista-descricao{
+    list-style: none;
+    background-color: var(--cor-bg-black);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.lista-descricao > li h2, p{
+    color: var(--cor-bg-subtitle);
+}
+
+.lista-descricao li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 2px solid var(--cor-border-bottom);
+
+}
+
+.lista-bikes{
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title-other-bikes{
+    font-size: 3.5rem;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    position: relative;
+}
+
+.title-other-bikes::before{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../IMG/dec/bottom-left.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 200px;
+    left: 15px;
+}
+
+.lista-bikee{
+    display: flex;
+    gap: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    padding: 20px 0px;
+    align-content: center;
+}
+
+.li-bike{
+    list-style: none;
+    min-width: 280px;
+    height: 100%;
+}
+
+.li-bike:hover > .subtitle-li::before{
+    width: 5%;
+    transition: 0.3s;
+}
+
+.lista-bikee img{
+    width: 100%;
+    height: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 4px;
+
+}
+
+.subtitle-li{
+    font-size: 1.9rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-roboto);
+    margin-top: 10px;
+}
+
+.subtitle-li::before{
+    content: "";
+    display: inline-block;
+    width: 2.5%;
+    height: 7px;
+    background-color: rgb(177, 177, 22);
+    transition: 0.3s;
+}
+
+.preco-li{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-left: 20px;
+    color: var(--cor-title-cinza);
+    margin-top: 7px;
+}
+
+.back-seguro{
+    background-color: var(--cor-bg-seguros);
+    box-shadow: inset 0 -120px var(--cor-bg-black), inset 0 120px var(--cor-fundo-white);
+    width: 100%;
+}
+
+.seguroo{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    padding: 0px 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.seguroo > div > h2{
+    font-size: 3.9rem;
+    color: var(--cor-bg-title);
+    margin-bottom: 30px;
+}
+
+.seguroo > div > p{
+    font-size: 1.5rem;
+    color: var(--cor-bg-subtitle);
+    margin-bottom: 40px;
+
+}
+
+.seguroo > div > a{
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: var(--cor-title-button);
+    background-color: var(--cor-des-amarelo);
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.seguroo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.seguroo > div{
+    height: auto;
+    box-sizing: border-box;
+    padding: 180px 0px;
+    position: relative;
+}
+
+.seguroo > div::after{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../IMG/dec/bottom-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 20px;
+}
+
+@media screen and (max-width: 922px) {
+    .box-imgs{
+        gap: 20px 0px;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .nimbus{
+        grid-row: 1;
+    }
+
+    .magic{
+        width: 100%;
+        grid-row: 2;
+    }
+
+    .nebula{
+        width: 100%;
+        grid-row: 3;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .conteudo{
+        gap: 20px 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .box-imgs{
+        grid-row: 4;
+        gap: 20px 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .title-other-bikes{
+        font-size: 2.5rem;
+    }
+
+    .magic{
+
+    }
+
+    .nebula{
+        grid-row: 2;
+    }
+
+    .seguroo > div > h2{
+        font-size: 2.4rem;
+        margin-bottom: 30px;
+    }
+    
+    .seguroo > div > p{
+        font-size: 1.2rem;
+    }
+    
+    .seguroo > div > a{
+        text-decoration: none;
+        padding: 15px 30px;
+        border-radius: 4px;
+        background-color: yellow;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .seguroo{
+        grid-template-columns: 1fr;
+        box-shadow: inset 0 -120px var(--cor-bg-seguros), inset 0 120px var(--cor-bg-black);
+    }
+
+    .seguroo > div{
+        grid-row: 1;
+        padding: 20px 0px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .conteudo > h1{
+        font-size: 2.9rem;
+    }
+
+    .descricao > p{
+        font-size: 1.3rem !important;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .box-imgs{
+        width: 100%;
+        gap: 10px 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .descricao > div{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .descricao > div > a{
+        width: 40%;
+        text-align: center;
+        min-width: 130px;
+        font-size: 1.3rem;
+    }
+
+    .lista-vantagens{
+        gap: 20px 20px;
+    }
+
+    .magic{
+        grid-row: 3;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .lista-vantagens{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 30px 0px;
+    }
+
+
+    .title-other-bikes{
+        font-size: 2.1rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 340px){
+    .seguroo > div::after{
+        display: none;
+    }
+
+    .conteudo > h1{
+        font-size: 2.1rem;
+    }
+
+
+}

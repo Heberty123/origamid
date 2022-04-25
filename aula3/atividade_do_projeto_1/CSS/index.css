@@ -1,8 +1,10 @@
+@import url(variables.css);
+
 
 .introducao-bac{
     width: 100%;
-    background-color: beige;
-    box-shadow: inset 0 -120px white;
+    background-color: var(--cor-bg-black);
+    box-shadow: inset 0 -120px var(--cor-bg-title);
 }
 
 
@@ -29,30 +31,39 @@
 }
 
 .titulo-home{
-    font-size: 2.6rem;
-}
-
-.dot_yellow{
-    color: yellow;
-    border-radius: 5px;
+    font-size: 3.9rem;
+    margin-top: 20px;
+    font-family: var(--font-title-pri);
+    color: var(--cor-bg-title);
 }
 
 .introducao{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    font-family: var(--font-roboto);
+    color: var(--cor-bg-subtitle);
     margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .button_introducao{
     display: flex;
     text-decoration: none;
+    border-radius: 4px;
     font-size: 1.6rem;
     width: 30%;
-    color: black;
+    color: var(--cor-title-button);
     height: 40px;
-    background-color: yellow;
+    background-color: var(--cor-des-amarelo);
     padding: 10px 20px;
     justify-content: center;
     align-items: center;
+    transition: 0.2s;
+}
+
+.button_introducao:hover{
+    background-color: var(--cor-amarelo-escuro);
+    transition: 0.2s;
 }
 
 .img-home{
@@ -72,19 +83,25 @@
 }
 
 .title-escolha{
-    font-size: 3.8rem;
+    font-size: 4.3rem;
+    margin-top: 50px;
     margin-bottom: 40px;
-    padding-left: 130px;
+    font-family: var(--font-roboto);
+    color: var(--cor-bg-black);
+    padding-left: 100px;
 }
 
 .lista-bike{
     display: flex;
     gap: 40px;
     width: 100%;
+    padding: 20px 10px;
+    overflow-y: auto;
 }
 
 .li-bike{
     list-style: none;
+    min-width: 293px;
 }
 
 .li-bike:hover > .subtitle-li::before{
@@ -101,6 +118,9 @@
 
 .subtitle-li{
     font-size: 1.7rem;
+    color: var(--cor-bg-black);
+    font-weight: 700;
+    font-family: var(--font-poppins);
     display: flex;
     align-items: center;
     gap: 10px;
@@ -112,19 +132,22 @@
     display: inline-block;
     width: 2.5%;
     height: 7px;
-    background-color: rgb(177, 177, 22);
+    background-color: var(--cor-des-amarelo);
     transition: 0.3s;
 }
 
 .preco-li{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    color: var(--cor-title-cinza);
+    font-weight: 600;
+    font-family: var(--font-roboto);
     padding-left: 20px;
-    margin-top: 7px;
+    margin-top: 10px;
 }
 
 .background-tecnologia{
-    background-color: rgb(0, 0, 0);
-    box-shadow: inset 0 120px white, inset 0 -120px white;
+    background-color: var(--cor-bg-black);
+    box-shadow: inset 0 120px var(--cor-bg-title), inset 0 -120px var(--cor-bg-title);
 }
 
 .intro-tecnologia{
@@ -141,45 +164,48 @@
 }
 
 .contexto-tecnologia{
-
+    padding: 170px 0px;
+    box-sizing: border-box;
 }
 
 .title-tecnologia{
-    font-size: 1.8rem;
-    color: rgb(187, 187, 168);
+    font-size: 1.4rem;
+    color: var(--cor-bg-subtitle);
+    font-family: var(--font-roboto);
     text-transform: uppercase;
     margin-bottom: 30px;
 }
 
 .frase-tecnologia{
-    font-size: 2.8rem;
-    color: white;
-    margin-bottom: 20px;
+    font-size: 2.9rem;
+    color: var(--cor-bg-title);
+    font-family: var(--font-roboto);
+    margin-bottom: 40px;
 }
 
 .descricao-tecnologia{
-    font-size: 1.4rem;
-    color: rgb(228, 234, 240);
-    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: var(--cor-bg-subtitle);
+    font-family: var(--font-poppins);
+    margin-bottom: 25px;
 }
 
 
 .modelo-escolha{
-    color: yellow;
-    font-size: 2.3rem;
+    color: var(--cor-des-amarelo);
+    font-family: var(--font-roboto);
+    font-weight: 900;
+    font-size: 1.9rem;
     display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--cor-des-amarelo);
     margin-bottom: 90px;
     position: relative;
 }
 
-.modelo-escolha::before{
-    content: "";
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: yellow;
-    top: 43px;
+.modelo-escolha:hover{
+    color: aliceblue;
+    border-bottom: 3px solid aliceblue;;
 }
 
 .tecnologias-grid{
@@ -191,16 +217,20 @@
 .tecnologia{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 .tec-motor{
     font-size: 1.5rem;
+    color: var(--cor-bg-title);
+    font-family: var(--font-roboto);
     position: relative;
 }
 
 .tec-rastreador{
     font-size: 1.5rem;
+    color: var(--cor-bg-title);
+    font-family: var(--font-roboto);
     position: relative;
 }
 
@@ -213,7 +243,7 @@
     width: 50px;
     height: 50px;
     position: absolute;
-    top: -40px;
+    top: -45px;
     left: -10px;
 }
 
@@ -226,17 +256,28 @@
     width: 50px;
     height: 50px;
     position: absolute;
-    top: -40px;
+    top: -45px;
     left: -10px;
 }
 
 .especifico-desc{
-    font-size: 1.1rem;
+    font-size: 1.0rem;
+    line-height: 1.2;
+    color: var(--cor-bg-subtitle);
+    font-family: var(--font-poppins);
+}
+
+.imagem-tecnologia{
+    width: 100%;
+    height: 100%;
 }
 
 .imagem-tecnologia img{
     width: 100%;
+    height: 100%;
     border-radius: 4px;
+    object-fit: cover;
+    object-position: left;
 }
 
 /*   Parceiros   */
@@ -244,13 +285,16 @@
 .section-parceiros{
     width: 100%;
     max-width: 1400px;
-    margin: 70px auto 80px auto;
+    margin: 90px auto 80px auto;
     box-sizing: border-box;
 }
 
 .title-parceiros{
-    font-size: 4.3rem;
-    padding-left: 60px;
+    font-size: 3.7rem;
+    padding-left: 40px;
+    font-weight: 600;
+    color: var(--cor-bg-black);
+    font-family: var(--font-roboto);
     margin-bottom: 50px;
 }
 
@@ -296,18 +340,22 @@
 .depoimentos{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+    margin-top: 140px;
 }
 
 .img-depoimento{
     width: 100%;
     height: 100%;
+    max-height: 400px;
     object-fit: cover;
+    box-sizing: border-box;
 }
 
 .box-motivacional{
-    background-color: yellow;
+    background-color: var(--cor-des-amarelo);
     width: 100%;
-    padding: 70px 40px 90px 100px;
+    padding: 50px 20px 70px 70px;
     display: grid;
     grid-template-rows: 1fr auto;
     box-sizing: border-box;
@@ -331,7 +379,10 @@
 }
 
 .frase-motivacional{
-    font-size: 2.3rem;
+    font-size: 3.3rem;
+    color: var(--cor-bg-black);
+    font-weight: 300;
+    font-family: var(--font-satisfy);
     position: relative;
 }
 
@@ -344,6 +395,7 @@
     content: '"';
     display: inline-block;
     position: absolute;
+    font-family: var(--font-indie);
     font-size: 3.6rem;
     left: -20px;
 }   
@@ -358,6 +410,9 @@
 
 .autografa{
     text-align: right;
+    font-size: 1.0rem;
+    color: var(--cor-title-cinza);
+    font-family: var(--font-poppins);
     position: relative;
 }
 
@@ -378,10 +433,10 @@
 .seguros-background{
     width: 100%;
     height: 100%;
-    max-height: 710px;
+    height: auto;
     padding: 10px 20px;
     box-sizing: border-box;
-    background-color: rgb(151, 139, 139);
+    background-color: var(--cor-bg-seguros);
 }
 
 .seguro-grid{
@@ -400,12 +455,15 @@
 
 .title-seguro{
     grid-column: span 2;
-    font-size: 4.6rem;
+    color: var(--cor-bg-title);
+    font-family: var(--font-Montserrat);
+    font-weight: 600;
+    font-size: 3.6rem;
 }
 
 
 .prata-item{
-    background-color: rgb(97, 87, 87);
+    background-color: var(--cor-bg-black);
     padding: 40px 60px;
     border-radius: 4px;
     box-sizing: border-box;
@@ -413,22 +471,30 @@
     grid-template-columns: 1fr auto;
     grid-template-rows: auto 1fr auto;
     width: 100%;
-    height: 80%;
+    height: auto;
 }
 
 .title-prata{
-    font-size: 2.6rem;
+    font-size: 2.1rem;
+    color: var(--cor-bg-subtitle);
+    font-family: var(--font-roboto);
+    font-weight: 600;
+    text-transform: uppercase;
     margin-bottom: 10px;
 }
 
 .preco-prata{
     position: relative;
-    font-size: 2.4rem;
+    color: var(--cor-bg-title);
+    font-family: var(--font-roboto);
+    font-weight: 600;
+    font-size: 2.1rem;
 }
 
 .preco-prata::before{
     content: "mensal";
     font-size: 1.2rem;
+    color: var(--cor-bg-title);
     display: inline-block;
     position: absolute;
     top: 35px;
@@ -439,6 +505,9 @@
     display: flex;
     flex-direction: column;
     grid-column: span 2;
+    color: var(--cor-bg-title);
+    font-family: var(--font-roboto);
+    text-transform: capitalize;
     list-style: none;
     padding: 30px 0px;
     gap: 20px;
@@ -464,17 +533,21 @@
 
 .button-prata{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.2rem;
     padding: 10px 20px;
+    text-align: center;
     border-radius: 4px;
-    background-color: aquamarine;
+    color: var(--cor-bg-subtitle);
+    background-color: var(--cor-button-prata);
+    font-family: var(--font-roboto);
+    font-weight: 600;
     grid-column: 1/-1;
     width: 40%;
 }
 
 
 .ouro-item{
-    background-color: rgb(97, 87, 87);
+    background-color: var(--cor-bg-black);
     padding: 40px 60px;
     border-radius: 4px;
     box-sizing: border-box;
@@ -486,19 +559,27 @@
 }
 
 .title-ouro{
-    font-size: 2.6rem;
+    font-size: 2.1rem;
+    color: var(--cor-bg-subtitle);
+    font-family: var(--font-roboto);
+    font-weight: 600;
+    text-transform: uppercase;
     margin-bottom: 10px;
 }
 
 .preco-ouro{
     position: relative;
-    font-size: 2.4rem;
+    color: var(--cor-bg-title);
+    font-family: var(--font-roboto);
+    font-weight: 600;
+    font-size: 2.1rem;
 }
 
 .preco-ouro::before{
     content: "mensal";
     display: inline-block;
     position: absolute;
+    color: var(--cor-bg-title);
     font-size: 1.2rem;
     left: 50px;
     top: 35px;
@@ -507,7 +588,10 @@
 
 .lista-vantagens-ouro{
     display: flex;
+    color: var(--cor-bg-title);
     flex-direction: column;
+    font-family: var(--font-roboto);
+    text-transform: capitalize;
     grid-column: span 2;
     list-style: none;
     padding: 30px 0px;
@@ -535,10 +619,14 @@
 
 .button-ouro{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.2rem;
     padding: 10px 20px;
+    text-align: center;
     border-radius: 4px;
-    background-color: aquamarine;
+    color: var(--cor-bg-black);
+    background-color: var(--cor-des-amarelo);
+    font-family: var(--font-roboto);
+    font-weight: 600;
     grid-column: 1/-1;
     width: 40%;
 }
@@ -546,7 +634,80 @@
 
 /*   Responsividade   */
 
+
+@media screen and (max-width: 1600px){
+    .frase-motivacional{
+        font-size: 3.3rem
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .frase-motivacional{
+        font-size: 2.5rem
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+    .frase-motivacional{
+        font-size: 2rem
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .seguro-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .title-seguro{
+        grid-column: 1;
+        margin-bottom: 40px;
+    }
+
+    .prata-item{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .ouro-item{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
 @media screen and (max-width: 800px) {
+    .introducao-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        padding: 30px 20px;
+    }
+
+    .intro-tecnologia{   
+        grid-template-columns: 1fr;    
+    }
+
+    .background-tecnologia{
+        box-shadow: none;
+    }
+
+    .contexto-tecnologia{
+        padding: 40px 20px;
+    }
+
+    .imagem-tecnologia{
+        display: none;
+    }
+
+    .introducao-contexto{
+        margin-bottom: 0px;
+    }
+
+    .introducao-bac{
+        box-shadow: inset 0 -160px white;
+    }
+
     .parceiros{
         grid-template-columns: 1fr 1fr;
     }
@@ -563,5 +724,183 @@
         border-top: 1px solid rgb(212, 200, 200);
     }
 
-   
+    .depoimentos{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+
+    .box-motivacional{
+        padding: 30px 40px;
+        text-align: center;
+    }
+
+    .box-motivacional::before{
+        display: none;
+    }
+
+    .autografa{
+        text-align: center;
+    }
+
+    .autografa::before{
+        display: none;
+    }
+
+    .frase-motivacional{
+        padding-bottom: 20px;
+    }
 }
+
+@media screen and (max-width: 600px){
+    .title-escolha{
+        padding: 0px;
+        font-size: 2.9rem;
+        text-align: center;
+    }
+
+    .titulo-home{
+        font-size: 3.1rem;
+    }
+
+    .section-parceiros .title-parceiros{
+        font-size: 2.7rem;
+    }
+
+    .depoimentos{
+        margin-top: 90px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    
+    .titulo-home{
+        font-size: 2.4rem;
+    }
+
+    .introducao{
+        font-size: 1.3rem;
+    }
+
+    .frase-tecnologia{
+        font-size: 2.3rem;
+    }
+
+    .section-parceiros .title-parceiros{
+        font-size: 1.9rem;
+    }
+    
+    .button-prata{
+        font-size: 1.3rem;
+    }
+
+    .prata-item{
+        grid-template-columns: 1fr;
+    }
+
+    .preco-prata{
+        display: none;
+    }
+
+
+    .button-ouro{
+        font-size: 1.3rem;
+    }
+
+    .ouro-item{
+        grid-template-columns: 1fr;
+    }
+
+    .preco-ouro{
+        display: none;
+    }
+
+    .modelo-escolha{
+        font-size: 1.9rem;
+    }
+
+    .depoimentos{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .lista-parceiros{
+        padding: 20px 20px;
+    }
+
+    .intro-tecnologia{
+        padding: 0px;
+    }
+
+    .tecnologias-grid{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .frase-motivacional{
+        font-size: 1.5rem;
+    }
+
+    .title-parceiros{
+        font-size: 14px;
+    }
+
+    .prata-item, .ouro-item{
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .button-prata, .button-ouro{
+        margin: 0 auto;
+    }
+
+    .vantagens-prata, .vantagens-ouro{
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .vantagens-ouro::before, .vantagens-prata::before{
+        width: 30px;
+        height: 30px;
+        left: -8px;
+        top: -5px;
+    }
+
+}
+
+
+@media screen and (max-width: 300px) {
+    .contexto-tecnologia{
+        box-sizing: border-box;
+    }
+
+    .frase-tecnologia{
+        font-size: 1.9rem;
+    }
+
+    .descricao-tecnologia{
+        font-size: 1.1rem;
+    }
+
+    .modelo-escolha{
+        font-size: 1.5rem;
+    }
+
+    .title-seguro{
+        font-size: 2.6rem;
+        text-align: center;
+    }
+
+    .li-bike{
+        min-width: 220px;
+
+    }
+
+    .box-motivacional{
+        padding: 17px 20px;
+    }
+}
+
+

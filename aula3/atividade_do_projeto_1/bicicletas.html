@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/header.css">
-    <link rel="stylesheet" href="CSS/bicicletas.css">
-    <title>Document</title>
+    <link rel="icon" href="IMG/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="CSS/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Montserrat:wght@400;700&family=Poppins:wght@300;700&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+        <title>Document</title>
 </head>
 <body>
     <header class="header-index">
         <div class="header-div">
             <img src="IMG/bikcraft.svg" alt="">
             <ul class="menus">
-                <li class="menu"><a href="">Bicicletas</a></li>
+                <li class="menu"><a href="bicicletas.html">Bicicletas</a></li>
                 <li class="menu"><a href="seguro.html">Seguros</a></li>
-                <li class="menu">Contato</li>
+                <li class="menu"><a href="contato.html">Contatos</a></li>
             </ul> 
         </div>
     </header>
@@ -47,7 +49,11 @@
                             <li>50 km/h</li>
                             <li>Rastreador</li>
                         </ul>
-                        <a href="Saiba sobre">Saiba Sobre</a>
+                        <div>
+                            <div class="button-hover">
+                                <a class="seta-hover" href="nimbus.html">Saiba Sobre</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -55,13 +61,13 @@
 
 
         <div class="div-bicicletas">
-            <div class="bicicleta-container">
+            <div class="bicicleta-container background">
                 <div class="img-bike">
                     <img src="IMG/bicicletas/nimbus.jpg" alt="">
                 </div>
                 <div class="grid-bike-conteudo">
-                    <h1>Nimbus Stark</h1>
-                    <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
+                    <h1 class="title-escuro">Nimbus Stark</h1>
+                    <p class="p-escuro">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
                     <div>
                         <ul>
                             <li>Motor Elétrico</li>
@@ -69,7 +75,11 @@
                             <li>50 km/h</li>
                             <li>Rastreador</li>
                         </ul>
-                        <a href="Saiba sobre">Saiba Sobre</a>
+                        <div>
+                            <div class="button-hover">
+                                <a class="seta-hover" href="nimbus.html">Saiba Sobre</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,7 +101,11 @@
                             <li>50 km/h</li>
                             <li>Rastreador</li>
                         </ul>
-                        <a href="Saiba sobre">Saiba Sobre</a>
+                        <div>
+                            <div class="button-hover">
+                                <a class="seta-hover" href="nimbus.html">Saiba Sobre</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,7 +116,36 @@
 
     </main>
 
+    <footer class="footer-index">
+        <div class="footer-box-index">
+            <img src="IMG/bikcraft.svg" alt="">
+            <div class="contato">
+                <h2 class="title-contato">contato</h2>
+                <p class="telefone">+55 21 9999-9999</p>
+                <p class="email">contato@bikcraft.com</p>
+                <p class="endereco">Avenida Paulista, 1654 - São Paulo</p>
+                <p class="cidade">São Paulo - SP</p>
+                <ul class="Redes">
+                    <li class="rede-instagram"><img src="IMG/redes/instagram.svg" alt="instagram"></li>
+                    <li class="rede-facebook"><img src="IMG/redes/facebook.svg" alt="facebook"></li>
+                    <li class="rede-youtube"><img src="IMG/redes/youtube.svg" alt="youtube"></li>
+                </ul>
+            </div>
+            <div class="informacao-foote">
+                <h2 class="informacao-footer-index">informações</h2>
+                <ul class="lista-informacoes">
+                    <li class="lista-inf">Bicicletas</li>
+                    <li class="lista-inf">Seguros</li>
+                    <li class="lista-inf">Contato</li>
+                    <li class="lista-inf">Termos e Condições</li>
+                </ul>
+            </div>
+            <p class="direitos-autorais-footer">Bikcraft © Alguns direitos reservados.</p>
+        </div>
+    </footer>
 
 
+
+    <script src="JavaScript/script.js"></script>
 </body>
 </html>

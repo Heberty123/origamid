@@ -1,11 +1,14 @@
 
+body{
+    font-family: var(--font-roboto);
+}
+
 .seguros-background{
     width: 100%;
     height: 100%;
-    max-height: 710px;
     padding: 10px 20px;
     box-sizing: border-box;
-    background-color: rgb(151, 139, 139);
+    background-color: var(--cor-bg-seguros);
     position: relative;
 }
 
@@ -14,11 +17,11 @@
     width: 60px;
     height: 60px;
     display: inline-block;
-    background-image: url("../IMG/icones/seguro.svg");
+    background-image: url("../IMG/dec/bottom-left.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
-    top: 630px;
+    top: 680px;
 }
 
 .seguro-grid{
@@ -38,6 +41,21 @@
 .seguro-grid > p {
     font-size: 1.4rem;
     color: azure;
+    position: relative;
+}
+
+.seguro-conteudo > p::after{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../IMG/dec/top-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 70px;
+    right: 30px;
 }
 
 .seguro-conteudo{
@@ -47,17 +65,20 @@
 
 .seguro-conteudo > p{
     font-size: 1.4rem;
+    margin-bottom: 20px;
     color: rgb(191, 193, 194);
 }
 
 .title-seguro{
     grid-column: span 2;
+    color: var(--cor-bg-title);
     font-size: 4.6rem;
+    margin-bottom: 30px;
 }
 
 
 .prata-item{
-    background-color: rgb(97, 87, 87);
+    background-color: var(--cor-bg-black);
     padding: 20px 20px 20px 60px;
     border-radius: 4px;
     box-sizing: border-box;
@@ -70,12 +91,16 @@
 
 .title-prata{
     font-size: 2.6rem;
-    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: var(--cor-title-cinza);
+    font-family: var(--font-poppins);
+    margin-top: 10px;
 }
 
 .preco-prata{
     position: relative;
     font-size: 2.4rem;
+    color: var(--cor-bg-title);
 }
 
 .preco-prata::before{
@@ -90,6 +115,7 @@
 .lista-vantagens-prata{
     display: flex;
     flex-direction: column;
+    color: var(--cor-bg-title);
     height: auto;
     grid-column: span 2;
     list-style: none;
@@ -117,20 +143,26 @@
 
 .button-prata{
     text-decoration: none;
-    font-size: 2rem;
-    padding: 10px 20px;
+    font-size: 1.6rem;
+    padding: 15px 8px;
     width: 100%;
     max-width: 184px;
     border-radius: 4px;
-    background-color: aquamarine;
+    background-color: var(--cor-button-prata);
+    color: var(--cor-bg-title);
     grid-column: 1/-1;
     text-align: center;
 
 }
 
+.button-prata:hover{
+    background-color: var(--cor-button-prata-escuro);
+    transition: 0.2s;
+}
+
 
 .ouro-item{
-    background-color: rgb(97, 87, 87);
+    background-color: var(--cor-bg-black);
     padding: 40px 20px 40px 60px;
     border-radius: 4px;
     box-sizing: border-box;
@@ -145,11 +177,8 @@
 .ouro-item::after{
     content: '';
     width: 50px;
-    height: 50px;
-    display: inline-block;
-    background-image: url("../IMG/icones/email.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+    gap: 20px;
+    box-sizing: border-box;
     background-size: 100%;
     position: absolute;
     right: 60px;
@@ -159,11 +188,15 @@
 .title-ouro{
     font-size: 2.6rem;
     margin-bottom: 10px;
+    color: var(--cor-des-amarelo);
+    font-family: var(--font-poppins);
+    text-transform: uppercase;
 }
 
 .preco-ouro{
     position: relative;
     font-size: 2.4rem;
+    color: var(--cor-bg-title);
 }
 
 .preco-ouro::before{
@@ -181,6 +214,7 @@
     flex-direction: column;
     grid-column: span 2;
     list-style: none;
+    color: var(--cor-bg-title);
     padding: 30px 0px;
     gap: 20px;
     box-sizing: border-box;
@@ -206,26 +240,33 @@
 
 .button-ouro{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
     padding: 10px 20px;
     width: 100%;
     max-width: 184px;
     border-radius: 4px;
-    background-color: aquamarine;
+    color: var(--cor-text-button);
+    background-color: var(--cor-des-amarelo);
     grid-column: 1/-1;
+    transition: 0.2s;
 }
 
-.dot-yellow{
-    color: yellow
+.button-ouro:hover{
+    background-color: var(--cor-amarelo-escuro);
+    transition: 0.2s; 
 }
+
 
 .div-vantagens{
     width: 100%;
     position: relative;
+    background-color: var(--cor-bg-black);
 }
 
 .vantagens{
     width: 100%;
+    background-color: var(--cor-bg-black);
     max-width: 1200px;
     margin: 0px auto;
     padding: 100px 20px;
@@ -233,8 +274,37 @@
     position: relative;
 }
 
+.vantagens::before{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../IMG/dec/bottom-left.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+}
+
+.vantagens::after{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../IMG/dec/bottom-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 25px;
+    right: 15px;
+}
+
 .vantagens > h1{
     font-size: 3.8rem;
+    color: var(--cor-bg-title);
     margin-bottom: 60px;
 }
 
@@ -244,6 +314,13 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 30px;
+}
+
+.vantagens > ul h2{
+    color: var(--cor-bg-title);
+    font-family: var(--font-Montserrat);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
 }
 
 .vantagens > ul img{
@@ -257,39 +334,201 @@
     gap: 10px;
 }
 
-.div-vantagens::before{
-    content: '';
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-image: url("../IMG/icones/estoque.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
-    bottom: 35px;
-    left: 15px;
-}
-
-.div-vantagens::after{
-    content: '';
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-image: url("../IMG/icones/estoque.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
-    bottom: 35px;
-    right: 15px;
+.vantagens > ul > li > p{
+    color: var(--cor-bg-subtitle);
 }
 
 .perguntas{
     padding: 100px 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.perguntas > h1 {
-    font-size: 2.9rem;
+.perguntas > div{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.perguntas > div > h1 {
+    font-size: 2.8rem;
     margin-bottom: 60px;
+    font-family: var(--font-poppins);
+}
+
+.perguntas > div > div > dt{
+    padding: 25px;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    font-family: var(--font-Montserrat);
+    font-weight: 900;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.perguntas > div > div > dd{
+    line-height: 1.4;
+    font-family: var(--font-poppins);
+    color: var(--cor-title-cinza);
+}
+
+.perguntas > div > div > dt > img{
+    transition: 0.5s;
+}
+
+.rotaciona{
+    transition: 0.5s;
+    transform: rotate(180deg);
+}
+
+.perguntas > div > div > dt::before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 8px;
+    background-color: var(--cor-des-amarelo);
+}
+
+.semRadius {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.perguntas > div > div > dd{
+    padding: 10px 30px 30px 50px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.cinzas{
+    background-color: var(--cor-fundo-white);
+}
+
+
+.font2 {
+    padding: 20px;
+    display: none;
+}
+
+.display-no{
+    display: block;
+}
+
+@media screen and (max-width: 1100px){
+    .vantagens ul{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .seguro-grid{
+        gap: 20px 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .prata-item{
+        height: auto;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .lista-vantagens-prata{
+        margin-bottom: 30px;
+    }
+
+    .ouro-item{
+        grid-row: 3;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .seguros-background::before{
+        top: 1000px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .vantagens h1{
+        font-size: 2.7rem;
+        text-align: center;
+    }
+
+    .seguro-conteudo p{
+        text-align: center;
+    }
+
+    .title-seguro{
+        font-size: 3.4rem;
+        text-align: center;
+    }
+
+    .div-vantagens::after{
+        display: none;
+    }
+
+    .div-vantagens::before{
+        display: none;
+    }
+
+    .vantagens ul{
+        grid-template-columns: 1fr;
+    }
+
+    .perguntas > div > h1{
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .preco-prata{
+        display: none;
+    }
+
+    .preco-ouro{
+        display: none;
+    }
+
+    .button-prata, .button-ouro{
+        width: 50%;
+        min-width: 130px;
+        font-size: 1.5rem;
+    }
+
+    .prata-item{
+        padding: 10px;
+        
+    }
+
+    .ouro-item{
+        padding: 10px;
+    }
+
+    .perguntas > div > h1{
+        font-size: 1.6rem;
+    }
+
+    .vantagens-prata, .vantagens-ouro{
+        display: flex;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .vantagens-prata::before, .vantagens-ouro::before{
+        display: none;
+    }
+
+    .vantagens-prata::before, .vantagens-ouro::before{
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background-image: url("../IMG/icones/lista.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
 }
